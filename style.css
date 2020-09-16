@@ -27,13 +27,13 @@ header {
   display: flex;
   flex-flow: row wrap;
   background-color: #222e50;
-  color: #cb5e56;
+  color: #f5cac3;
 }
 
 nav {
   flex: 100%;
   display: flex;
-  color: #cb5e56;
+  color: #f5cac3;
 }
 
 nav ul {
@@ -57,5 +57,5 @@ nav span {
   line-height: 1.7;
   text-transform: uppercase;
   text-decoration: none;
-  color: #cb5e56;
+  color: #f5cac3;
 }
