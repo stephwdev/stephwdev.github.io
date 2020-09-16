@@ -4,7 +4,11 @@ html {
   color: #222e50;
 }
 
-h1,
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #f5cac3;
+}
+
 h2,
 h3 {
   font-family: "Cinzel Decorative", cursive;
@@ -48,10 +52,10 @@ nav li {
 nav a,
 nav span {
   display: inline-block;
-  font-size: 2rem;
-  height: 3rem;
+  font-size: 1rem;
+  height: 2rem;
   line-height: 1.7;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #f5cac3;
 }
