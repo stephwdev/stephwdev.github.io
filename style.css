@@ -31,7 +31,7 @@ header {
 }
 
 nav {
-  height: 50px;
+  height: 25px;
   flex: 100%;
   display: flex;
 }
