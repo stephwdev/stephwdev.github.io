@@ -6,7 +6,7 @@ html {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  color: #f5cac3;
+  color: whitesmoke;
 }
 
 h2,
@@ -27,13 +27,13 @@ header {
   display: flex;
   flex-flow: row wrap;
   background-color: #222e50;
-  color: #f5cac3;
+  color: whitesmoke;
 }
 
 nav {
   flex: 100%;
   display: flex;
-  color: #f5cac3;
+  color: whitesmoke;
 }
 
 nav ul {
@@ -57,5 +57,9 @@ nav span {
   line-height: 1.7;
   text-transform: uppercase;
   text-decoration: none;
-  color: #f5cac3;
+  color: whitesmoke;
+}
+
+a {
+  color: #db5375;
 }
