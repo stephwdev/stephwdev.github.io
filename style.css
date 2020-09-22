@@ -1,7 +1,19 @@
 html {
-  background-color: #bcffdb;
+  background-image: url("images/Subtle-Prism.svg");
+  background-color: #222e50;
   font-size: 20px;
   color: #222e50;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  background-image: url("images/Subtle-Prism.svg");
+  background-color: #222e50;
+  font-size: 20px;
+  color: #222e50;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1,
@@ -34,6 +46,7 @@ header {
   flex-flow: row wrap;
   background-color: #222e50;
   color: whitesmoke;
+  border-radius: 10px;
 }
 
 nav {
@@ -66,6 +79,10 @@ nav span {
   color: whitesmoke;
 }
 
+.active {
+  color: #bcffdb;
+}
+
 a {
   color: #ffa6c1;
 }
@@ -81,6 +98,7 @@ section {
   text-align: center;
   background-color: #222e50;
   color: whitesmoke;
+  border-radius: 10px;
 }
 
 .experience {
