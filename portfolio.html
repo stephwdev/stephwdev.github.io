@@ -5,15 +5,18 @@
     <meta charset="utf-8" />
     <meta name="author" content="Steph Walsh" />
     <title>Projects</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/bcd4a671b7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="about.html">About Me</a></li> -->
           <li><a class="active">Projects</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -23,18 +26,89 @@
 
     <main>
       <section class="experience">
-        <h1>Projects</h1>
         <h2>Software Projects</h2>
-        <ul>
-          <li>Capstone Project</li>
-          <li>Machine Learning - Titanic</li>
-          <li>Database - NCAA Tournament</li>
-        </ul>
+        <div class="cards">
+          <article class="card">
+            <h3>Capstone Project</h3>
+            <p class="experience">
+              Full stack online learning platform using React, Django,
+              TypeScript. Completed using an Agile/Scrum project management
+              system. This project is part of a private repo, so please reach
+              out to chat about it!
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>
+              Machine Learning - Titanic
+              <a
+                href="https://github.com/stephwdev/titanic-machine-learning"
+                target="\_blank"
+                ><i class="fab fa-github fa-sm"></i
+              ></a>
+            </h3>
+            <p class="experience">
+              Kaggle competition for a class project to predict if a passenger
+              survived or not using multiple machine learning models.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>
+              Database - NCAA Tournament
+              <a
+                href="https://github.com/stephwdev/ncaa-march-madness"
+                target="\_blank"
+                ><i class="fab fa-github fa-sm"></i
+              ></a>
+            </h3>
+
+            <p class="experience">
+              A relational database project which involved designing the
+              database and then designing a user interface to interact with the
+              information in the database.
+            </p>
+          </article>
+          <article class="card">
+            <h3>
+              Client Management System
+              <a
+                href="https://github.com/stephwdev/client-management-system"
+                target="\_blank"
+                ><i class="fab fa-github fa-sm"></i
+              ></a>
+            </h3>
+
+            <p class="experience">
+              A client server architecture application built using an MVC design
+              pattern in Java. It allows you to add, edit, and delete customers.
+            </p>
+          </article>
+        </div>
+
         <h2>Other Projects</h2>
-        <ul>
-          <li>Templated Email System</li>
-          <li>Bracket Challenge</li>
-        </ul>
+        <div class="cards">
+          <article class="card">
+            <h3>Templated Email System</h3>
+            <p class="experience">
+              Through a marketing automation software I created landing pages
+              that allowed employees to send templated emails to their clients.
+              They would fill out a form and an email would be sent with the
+              correct email with that client's information inserted for the
+              variables.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Bracket Challenge</h3>
+            <p class="experience">
+              Created an automated system that would send a text message to a
+              fan asking for their prediction of the winner of the game that
+              week. We could download the responses as a csv and upload them to
+              an Excel file that kept track of the standings each week.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
   </body>
