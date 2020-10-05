@@ -137,7 +137,7 @@ footer {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-section {
+.main-section {
   margin: 2% 15% 10% 15%;
   text-align: center;
   background-color: #222e50;
@@ -176,4 +176,54 @@ article {
 
 .skills {
   list-style-type: none;
+}
+
+/* calculator styles */
+
+.calc {
+  width: 400px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 30%;
+  border: 2px whitesmoke solid;
+}
+
+.screen {
+  padding: 20px 5px;
+  text-align: right;
+  font-family: monospace;
+}
+
+.calc-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.num-btn {
+  background-color: whitesmoke;
+  color: #222e50;
+  font-size: 40px;
+  cursor: pointer;
+  width: 24.5%;
+  margin-bottom: 0.5%;
+  justify-content: space-between;
+  border: none;
+  padding: 10px;
+}
+
+.double {
+  width: 49.7%;
+}
+
+.triple {
+  width: 74.9%;
+}
+
+.operator-btn {
+  background-color: #222e50;
+  color: #bcffdb;
+  font-size: 30px;
 }
