@@ -120,6 +120,7 @@ nav span {
   text-align: center;
   border-radius: 10px;
   padding: 5px 0px;
+  width: 100%;
 }
 
 a {
@@ -138,7 +139,7 @@ footer {
 }
 
 .main-section {
-  margin: 2% 15% 10% 15%;
+  margin: 2% 10% 10% 10%;
   text-align: center;
   background-color: #222e50;
   color: whitesmoke;
@@ -214,6 +215,10 @@ article {
   padding: 10px;
 }
 
+.num-btn:hover {
+  background-color: lightgrey;
+}
+
 .double {
   width: 49.7%;
 }
@@ -226,4 +231,10 @@ article {
   background-color: #222e50;
   color: #bcffdb;
   font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    grid-template-rows: 100px 125px 1fr;
+  }
 }

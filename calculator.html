@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Steph Walsh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
@@ -11,6 +12,7 @@
       src="https://kit.fontawesome.com/bcd4a671b7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/calc.js" defer></script>
   </head>
   <body>
     <header>
@@ -28,16 +30,18 @@
       <section class="main-section">
         <h1>Calculator App</h1>
         <div class="calc">
-          <section class="screen">Screen</section>
+          <section class="screen" id="result">10</section>
           <section class="calc-row">
-            <button class="num-btn double">C</button>
-            <button class="num-btn"><i class="fas fa-backspace"></i></button>
-            <button class="num-btn operator-btn">
+            <button class="num-btn double" id="btn-clear">C</button>
+            <button class="num-btn" id="btn-back">
+              <i class="fas fa-backspace"></i>
+            </button>
+            <button class="num-btn operator-btn" id="btn-divide">
               <i class="fas fa-divide"></i>
             </button>
           </section>
           <section class="calc-row">
-            <button class="num-btn">7</button>
+            <button class="num-btn" id="btn-7">7</button>
             <button class="num-btn">8</button>
             <button class="num-btn">9</button>
             <button class="num-btn operator-btn">
