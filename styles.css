@@ -1,13 +1,3 @@
-html {
-  background-image: url("images/Subtle-Prism.svg");
-  /* background by SVGBackgrounds.com */
-  background-color: #222e50;
-  font-size: 20px;
-  color: #222e50;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 body {
   background-image: url("images/Subtle-Prism.svg");
   background-color: #222e50;
@@ -55,42 +45,39 @@ li {
   padding: 10px;
 }
 
-header {
-  margin: 0 0 10px 0;
-  display: flex;
-  flex-flow: row wrap;
-  background-color: #222e50;
-  color: whitesmoke;
-  border-radius: 10px;
-}
-
-nav {
-  flex: 50%;
-  display: flex;
-  color: whitesmoke;
-}
-
-nav ul {
+* {
+  margin: 0;
   padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
+  border: none;
 }
 
-nav li {
-  display: inline;
-  text-align: center;
-  flex: 1;
+.top-nav {
+  height: 50px;
+  background-color: #222e50;
 }
 
-nav a,
-nav span {
-  display: inline-block;
-  font-size: 1rem;
-  line-height: 1;
-  text-transform: uppercase;
+#nav-links {
+  display: none;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+#nav-links li a {
   text-decoration: none;
   color: whitesmoke;
+  font-size: 20px;
+}
+
+#hamburger {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #222e50;
+  color: whitesmoke;
+  border: none;
 }
 
 .active {
@@ -236,5 +223,44 @@ article {
 @media (max-width: 480px) {
   .card {
     grid-template-rows: 100px 125px 1fr;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .top_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    color: blue;
+  }
+
+  #nav_links {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top_nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+  }
+  #hamburger {
+    display: none;
+  }
+  #nav_links {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 80%;
+    height: 30px;
+  }
+  #nav_links li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  #nav_links li a:hover {
+    border-bottom: 1px solid white;
   }
 }

@@ -12,17 +12,20 @@
       src="https://kit.fontawesome.com/bcd4a671b7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/hamburger.js" defer></script>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index">Home</a></li>
-          <li><a class="active">Projects</a></li>
-          <li><a href="resume">Resume</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="topnav" id="top-nav">
+        <a href="index">Home</a>
+        <a class="active">Projects</a>
+        <a href="resume">Resume</a>
+        <a href="contact">Contact</a>
+
+        <a href="javascript:void(0);" class="icon" onClick="myFunction()"
+          ><i class="fab fa-bars"></i
+        ></a>
+      </div>
     </header>
 
     <main>
