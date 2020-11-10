@@ -54,18 +54,22 @@ li {
 .top-nav {
   height: 50px;
   background-color: #222e50;
-}
-
-#nav-links {
-  display: none;
-  background-color: whitesmoke;
-  padding: 10px;
+  flex: 50%;
+  display: flex;
+  color: whitesmoke;
+  margin: 0 0 10px 0;
+  flex-flow: row wrap;
+  border-radius: 10px;
 }
 
 #nav-links li a {
   text-decoration: none;
-  color: whitesmoke;
   font-size: 20px;
+  list-style-type: none;
+  color: whitesmoke;
+  /* display: inline; */
+  text-align: center;
+  flex: 1;
 }
 
 #hamburger {
@@ -78,6 +82,7 @@ li {
   background-color: #222e50;
   color: whitesmoke;
   border: none;
+  display: none;
 }
 
 .active {
